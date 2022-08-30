@@ -25,6 +25,15 @@ const typeDefs = gql`
         user: User
     }
 
+    input bookInput {
+        authors: [String]
+        description: String
+        title: String
+        bookId: ID
+        image: String
+        link: String
+    } 
+
     type Query {
         me: User
     }
